@@ -11,37 +11,38 @@ class CartItem extends React.Component {
     //     }
     // }
 
-    increaseQty() {
-        // console.log(this.state);
+    // increaseQty() {
+    //     // console.log(this.state);
         
-        // this.setState({ //type 1
-        //     qty: this.state.qty +1
-        // })
+    //     // this.setState({ //type 1
+    //     //     qty: this.state.qty +1
+    //     // })
 
-        this.setState((prevState) => {
-            return {
-                qty: prevState.qty + 1
-            }
-        })
-    }
+    //     this.setState((prevState) => {
+    //         return {
+    //             qty: prevState.qty + 1
+    //         }
+    //     })
+    // }
 
-    decreaseQty() {
-        this.setState((prevState) => {
-            if(prevState.qty == 0){
-                return {
-                    qty: prevState.qty
-                }
-            }
-            return {
-             qty: prevState.qty -1   
-            }
+    // decreaseQty() {
+    //     this.setState((prevState) => {
+    //         if(prevState.qty === 0){
+    //             return {
+    //                 qty: prevState.qty
+    //             }
+    //         }
+    //         return {
+    //          qty: prevState.qty -1   
+    //         }
             
-        })
-    }
+    //     })
+    // }
 
     render () {
         console.log("svf-->", this.props.product)
         const {price, title, qty, } = this.props.product;
+        const {Delete, DecreaseQty, product} = this.props;
         return (
             <div className="cart-item">
                 <div className="left-block">
@@ -63,14 +64,17 @@ class CartItem extends React.Component {
                             alt="decrease" 
                             className="action-icons" 
                             src="https://t3.ftcdn.net/jpg/03/73/49/86/240_F_373498649_nBxauQ0ipBSVrVcMpWWVmTpXu3BLvRyY.jpg"
-                            onClick= {() => this.props.DecreaseQty(this.props.product)}
+                            onClick= {() => DecreaseQty(product)}
                             >
                             
                         </img>
                         <img 
                             alt="delete"   
                             className="action-icons" 
-                            src="https://t4.ftcdn.net/jpg/03/46/38/39/240_F_346383913_JQecl2DhpHy2YakDz1t3h0Tk3Ov8hikq.jpg">
+                            src="https://t4.ftcdn.net/jpg/03/46/38/39/240_F_346383913_JQecl2DhpHy2YakDz1t3h0Tk3Ov8hikq.jpg"
+                            onClick={()=> Delete(product.id)}
+                            >
+
                             
                         </img>
                     </div>
