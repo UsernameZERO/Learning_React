@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
-
-const dbUrl = 'mongodb+srv://UsernameZero:UsernameZero@cluster0.oe1eg.mongodb.net/UIcrud';
+require('dotenv').config();
+const dbUrl = process.env.DB_URL ;
+// console.log("vcjhvakh ====",dbUrl);
 mongoose.connect( dbUrl , {useNewUrlParser: true});
 
 const db = mongoose.connection;
