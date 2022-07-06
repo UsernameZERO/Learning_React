@@ -3,7 +3,6 @@ const express = require('express');
 const router = express.Router();
 
 const userCntrl = require('../controller/users');
-
 router.get('/', (req, res)=>{
     res.end('Hello WOrld');
 })
