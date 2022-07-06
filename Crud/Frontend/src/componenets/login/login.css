@@ -1,0 +1,65 @@
+.login{
+    display: flex;   
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid rgb(203, 95, 95);
+    border-radius: 20%;
+    padding: 10px;
+    width: 18rem;
+    margin: auto;
+    margin-top: 10rem;
+
+}
+.login form{
+    display: flex;
+    flex-direction: column;     
+}
+.login form label{
+    margin-left: 5px;
+    margin-top: 3px;
+    color: salmon;
+}
+.login form #pws{
+    margin-top: 5px;
+    width: 15rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    border: 2px solid black;
+}
+
+.login form #userN{
+    margin-top: 5px;
+    width: 15rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    border: 2px solid black;
+}
+
+.login button{
+    width:8rem;
+    height: 1.8rem;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-top: 8px;
+    cursor: pointer;
+    color: saddlebrown;
+    font-size: 17px;
+    font-weight: 600;
+
+}
+.login p{
+    padding-top: 3px;
+}
+
+.login p a{
+    text-decoration: none;
+    color: red;
+    font-weight: 600;
+}
+
+.login h1{
+    color: rgb(55, 89, 21);
+}

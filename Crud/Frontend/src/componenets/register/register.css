@@ -1,0 +1,72 @@
+.register{
+    display: flex;   
+    flex-direction: column;
+    align-items: center;
+   padding-top: 10%;
+   
+}
+.register form{
+    display: flex;
+    flex-direction: column;     
+}
+.register form label{
+    margin-left: 5px;
+    margin-top: 3px;
+    color: salmon;
+}
+.register form #pws{
+    margin-top: 5px;
+    width: 15rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    border: 2px solid black;
+}
+
+.register form #cpws{
+    margin-top: 5px;
+    width: 15rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    border: 2px solid black;
+}
+
+.register form #userN{
+    margin-top: 5px;
+    width: 15rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    border: 2px solid black;
+}
+.register form  #userNa{
+    margin-top: 5px;
+    width: 15rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    border: 2px solid black;
+}
+.register form  #desn{
+    margin-top: 5px;
+    width: 15rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    border: 2px solid black;
+}
+
+.register button{
+    width:10rem;
+    height: 1.8rem;
+    padding: 0.3rem;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-top: 8px;
+    cursor: pointer;
+    color: saddlebrown;
+    font-size: 17px;
+
+}
