@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
-require('dotenv').config();
+require('dotenv').config({path: '../.env'});
 const dbUrl = process.env.DB_URL ;
-// console.log("vcjhvakh ====",dbUrl);
 mongoose.connect( dbUrl , {useNewUrlParser: true});
 
 const db = mongoose.connection;
